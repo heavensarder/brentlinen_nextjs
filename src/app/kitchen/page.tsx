@@ -59,7 +59,7 @@ export default function Kitchen() {
             priority
           />
           {/* Sophisticated Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-stone-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-stone-900/70" />
         </div>
 
         {/* Hero Content */}
@@ -69,7 +69,7 @@ export default function Kitchen() {
               Professional Kitchen Wear
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-lg tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] tracking-tight">
             Chef Uniforms <br />
             <span className="italic font-light text-orange-200 text-4xl md:text-6xl lg:text-7xl block mt-2">& Kitchen Linen</span>
           </h1>

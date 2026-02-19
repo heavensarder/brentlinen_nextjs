@@ -58,7 +58,7 @@ export default function Hotel() {
             priority
           />
           {/* Sophisticated Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-stone-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-stone-900/70" />
         </div>
 
         {/* Hero Content */}
@@ -68,7 +68,7 @@ export default function Hotel() {
               PREMIUM HOSPITALITY SOLUTIONS
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-lg tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] tracking-tight">
             Hotel Linen Hire and <br />
             <span className="italic font-light text-purple-200 text-4xl md:text-6xl lg:text-7xl block mt-2">Laundry Services London</span>
           </h1>

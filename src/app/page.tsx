@@ -87,7 +87,7 @@ export default function Home() {
             <div className="lg:w-1/2 w-full">
               <div className="relative h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-50">
                 <Image
-                  src="https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://i.postimg.cc/0jwyr1Sx/about-us-img.webp"
                   alt="Professional Laundry Services"
                   fill
                   className="object-cover"
@@ -205,7 +205,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group flex flex-col border border-gray-100">
                <div className="relative h-72 overflow-hidden">
                  <Image
-                   src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   src="https://i.postimg.cc/qvS4YMZ9/hotel-linen.webp"
                    alt="Hotel Linen Hire"
                    fill
                    className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -232,7 +232,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group flex flex-col border border-gray-100">
                <div className="relative h-72 overflow-hidden">
                  <Image
-                   src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   src="https://i.postimg.cc/gkr9WbhS/restaurant-linen.jpg"
                    alt="Restaurant Linen Hire"
                    fill
                    className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -258,7 +258,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group flex flex-col border border-gray-100">
                <div className="relative h-72 overflow-hidden">
                  <Image
-                   src="https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   src="https://i.postimg.cc/QNvLhnqj/chef-linen.webp"
                    alt="Chef Uniform Hire"
                    fill
                    className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -284,7 +284,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group flex flex-col border border-gray-100">
                <div className="relative h-72 overflow-hidden">
                  <Image
-                   src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   src="https://i.postimg.cc/sgN7N7rk/event-linen.webp"
                    alt="Event Tablecloth Hire"
                    fill
                    className="object-cover group-hover:scale-110 transition-transform duration-700"

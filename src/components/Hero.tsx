@@ -6,10 +6,10 @@ import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
 
 const heroImages = [
-  "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1920", // Hotel Bed
-  "https://images.pexels.com/photos/4112236/pexels-photo-4112236.jpeg?auto=compress&cs=tinysrgb&w=1920", // Elegant Table Setting
-  "https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=1920", // Industrial Laundry
-  "https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&w=1920", // Towels
+  "https://i.postimg.cc/mrfWj1KX/hero_slider1.webp", // Hotel Bed
+  "https://i.postimg.cc/s2dCmGbN/hero_slider2.webp", // Elegant Table Setting
+  "https://i.postimg.cc/XJ122Tp3/hero-slider3.webp", // Industrial Laundry
+  "https://i.postimg.cc/L5b8865b/hero-slider4.webp", // Towels
 ];
 
 export default function Hero() {
@@ -46,8 +46,8 @@ export default function Hero() {
       ))}
 
       {/* Sophisticated Overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-      <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.4)_100%)]" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.3)_100%)]" />
 
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 text-center">
@@ -58,7 +58,7 @@ export default function Hero() {
            </span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white mb-8 leading-tight drop-shadow-2xl">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white mb-8 leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
           <span className="block animate-slide-up-fade [animation-delay:200ms]">Excellence in</span>
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-pink-200 animate-slide-up-fade [animation-delay:400ms]">Every Thread</span>
         </h1>
