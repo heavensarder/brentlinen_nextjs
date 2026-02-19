@@ -15,7 +15,7 @@ export default function LayoutWrapper({
   return (
     <>
       {!isAdmin && <Navbar />}
-      <main className={`flex-grow min-h-screen ${!isAdmin ? "pt-16 md:pt-28" : ""}`}>
+      <main className={`flex-grow min-h-screen ${!isAdmin ? "pt-[49px] md:pt-28" : ""}`}>
         {children}
       </main>
       {!isAdmin && <Footer />}
