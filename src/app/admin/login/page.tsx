@@ -29,7 +29,7 @@ export default function AdminLoginPage() {
       if (result?.error) {
         setError("Invalid email or password");
       } else {
-        router.push("/admin/seo");
+        router.push("/admin");
       }
     } catch (err) {
       setError("An unexpected error occurred");
