@@ -139,7 +139,7 @@ export default function Hotel() {
                  </div>
                  <div className="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-2xl overflow-hidden shadow-2xl z-20 border-8 border-white">
                       <Image
-                        src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800" // Relaxing
+                        src="https://i.postimg.cc/639H9C80/hetol-hero.webp" // Relaxing
                         alt="Relaxing Guest"
                         fill
                         className="object-cover"
@@ -168,89 +168,104 @@ export default function Hotel() {
             <div className="w-24 h-1 bg-purple-300 mx-auto mt-6"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Plain Linen Column */}
-            <div className="space-y-8">
-               <h3 className="text-3xl font-serif font-bold text-stone-800 text-center mb-4">Plain</h3>
-               <div className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:border-purple-200 transition-colors">
-                  <h3 className="text-2xl font-serif font-bold text-stone-800 mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-400">01</span>
-                    Plain Linen - Elite
-                  </h3>
-                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-6 group">
-                        <Image src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Plain Linen Elite" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
-                    </div>
-                  <p className="text-stone-600 leading-relaxed border-t pt-4 border-stone-100">
-                    <strong className="block text-stone-900 mb-1">100% Egyptian Cotton</strong>
-                    White single, double, king & super king. All come with Duvet Cover, Sheets and Pillowcase.
-                  </p>
+          {/* Product Grid Wrapper */}
+          <div className="space-y-20">
+            
+            {/* Plain Linen Section */}
+            <div>
+               <h3 className="text-3xl font-serif font-bold text-stone-800 text-center mb-12">Plain Linen Collection</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="bg-white p-6 rounded-2xl shadow-md border border-stone-100 hover:border-purple-200 transition-colors flex flex-col h-full">
+                    <h3 className="text-xl font-serif font-bold text-stone-800 mb-4 flex items-center gap-3">
+                      <span className="w-6 h-6 rounded-full bg-stone-100 flex items-center justify-center text-[10px] text-stone-400">01</span>
+                      Elite Plain
+                    </h3>
+                    <div className="relative aspect-square w-full rounded-lg overflow-hidden mb-4 group">
+                          <Image src="https://i.postimg.cc/L524H9fL/plian-elite.webp" alt="Plain Linen Elite" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                          <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                      </div>
+                    <p className="text-stone-600 text-sm leading-relaxed border-t pt-4 border-stone-100 mt-auto">
+                      <strong className="block text-stone-900 mb-1 text-xs uppercase tracking-wider">100% Egyptian Cotton</strong>
+                      Available in all sizes: Single to Super King. Includes covers and sheets.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl shadow-md border border-stone-100 hover:border-purple-200 transition-colors flex flex-col h-full">
+                    <h3 className="text-xl font-serif font-bold text-stone-800 mb-4 flex items-center gap-3">
+                      <span className="w-6 h-6 rounded-full bg-stone-100 flex items-center justify-center text-[10px] text-stone-400">02</span>
+                      Premium Plain
+                    </h3>
+                    <div className="relative aspect-square w-full rounded-lg overflow-hidden mb-4 group">
+                          <Image src="https://i.postimg.cc/9XLH4Yjm/plain-premium.webp" alt="Plain Linen Premium" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                      </div>
+                    <p className="text-stone-600 text-sm leading-relaxed border-t pt-4 border-stone-100 mt-auto">
+                      <strong className="block text-stone-900 mb-1 text-xs uppercase tracking-wider">High Quality Percale</strong>
+                      Durable and crisp. Available in all standard hotel bedding sizes.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl border border-purple-100 hover:shadow-lg transition-shadow flex flex-col justify-center items-center text-center h-full">
+                      <div className="w-24 h-24 relative mb-4">
+                           <Image src="https://i.postimg.cc/9MMvSmy5/logo.webp" alt="Brent Linen Hire" fill className="object-contain" />
+                      </div>
+                      <p className="text-xs text-purple-600 font-semibold tracking-tighter">Quality you can trust.<br/>Brent Linen Hire London.</p>
+                  </div>
+
+                  <div className="bg-stone-900 text-white p-6 rounded-2xl shadow-xl flex flex-col justify-center h-full">
+                      <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center mb-4">
+                          <FaTruck className="text-xl text-yellow-500" />
+                      </div>
+                      <h4 className="font-bold text-base mb-2">Punctual Delivery</h4>
+                      <p className="text-stone-400 text-xs leading-relaxed">Free Pickup & Delivery. We ensure your items arrive perfectly pressed every time.</p>
+                  </div>
                </div>
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:border-purple-200 transition-colors">
-                  <h3 className="text-2xl font-serif font-bold text-stone-800 mb-6 flex items-center gap-3">
-                     <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-400">02</span>
-                    Plain Linen - Premium
-                  </h3>
-                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-6 group">
-                         <Image src="https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Plain Linen Premium" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                  <p className="text-stone-600 leading-relaxed border-t pt-4 border-stone-100">
-                    <strong className="block text-stone-900 mb-1">High Quality Percale</strong>
-                    White single, double, king & super king. All come with Duvet Cover, Sheets and Pillowcase.
-                  </p>
-               </div>
-               
-               <div className="bg-white p-6 rounded-xl border border-purple-100 hover:shadow-lg transition-shadow flex flex-col justify-center items-center text-center">
-                    <div className="w-32 h-32 relative mb-4">
-                         <Image src="https://i.postimg.cc/9MMvSmy5/logo.webp" alt="Brent Linen Hire" fill className="object-contain" />
-                    </div>
-                    <p className="text-sm text-purple-600 font-semibold">Quality you can trust.<br/>Brent Linen Hire.</p>
-                </div>
             </div>
 
-            {/* Satin Stripe Column */}
-             <div className="space-y-8 lg:mt-16"> {/* Staggered effect */}
-               <h3 className="text-3xl font-serif font-bold text-stone-800 text-center mb-4">Satin Stripe</h3>
-               <div className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:border-purple-200 transition-colors relative overflow-hidden">
-                   <div className="absolute top-0 right-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
-                  <h3 className="text-2xl font-serif font-bold text-stone-800 mb-6 flex items-center gap-3">
-                     <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-400">03</span>
-                    Satin Stripe - Elite
-                  </h3>
-                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-6 group">
-                        <Image src="https://images.pexels.com/photos/6585757/pexels-photo-6585757.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Satin Stripe Elite" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                  <p className="text-stone-600 leading-relaxed border-t pt-4 border-stone-100">
-                    <strong className="block text-stone-900 mb-1">Luxury Satin Finish</strong>
-                    White single, double, king & super king. All come with Duvet Cover, Sheets and Pillowcase.
-                  </p>
-               </div>
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:border-purple-200 transition-colors">
-                  <h3 className="text-2xl font-serif font-bold text-stone-800 mb-6 flex items-center gap-3">
-                     <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-400">04</span>
-                    Satin Stripe - Premium
-                  </h3>
-                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-6 group">
-                        <Image src="https://images.pexels.com/photos/6585757/pexels-photo-6585757.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Satin Stripe Premium" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                   <p className="text-stone-600 leading-relaxed border-t pt-4 border-stone-100">
-                    <strong className="block text-stone-900 mb-1">High Quality Stripe</strong>
-                     White Single, Double, King & Super King. All come with Duvet Cover, Sheets and Pillowcase.
-                  </p>
-               </div>
-               
-               {/* Delivery Badge */}
-               <div className="bg-stone-900 text-white p-8 rounded-2xl shadow-xl flex items-center gap-6">
-                    <div className="p-4 bg-white/10 rounded-full">
-                        <FaTruck className="text-3xl text-yellow-500" />
-                    </div>
-                    <div>
-                        <h4 className="font-bold text-lg mb-1">Delivery on time every time</h4>
-                        <p className="text-stone-400 text-sm">Free Pickup and Delivery. We ensure your linen arrives when you need it.</p>
-                    </div>
-               </div>
+            {/* Satin Stripe Section */}
+            <div>
+               <h3 className="text-3xl font-serif font-bold text-stone-800 text-center mb-12">Satin Stripe Collection</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  
+                  <div className="bg-white p-6 rounded-2xl shadow-md border border-stone-100 hover:border-purple-200 transition-colors relative overflow-hidden flex flex-col h-full">
+                    <div className="absolute top-0 right-0 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">POPULAR</div>
+                    <h3 className="text-xl font-serif font-bold text-stone-800 mb-4 flex items-center gap-3">
+                      <span className="w-6 h-6 rounded-full bg-stone-100 flex items-center justify-center text-[10px] text-stone-400">03</span>
+                      Elite Satin
+                    </h3>
+                    <div className="relative aspect-square w-full rounded-lg overflow-hidden mb-4 group">
+                          <Image src="https://i.postimg.cc/KjBTW8bK/Elite-Satin.jpg" alt="Satin Stripe Elite" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                      </div>
+                    <p className="text-stone-600 text-sm leading-relaxed border-t pt-4 border-stone-100 mt-auto">
+                      <strong className="block text-stone-900 mb-1 text-xs uppercase tracking-wider">Luxury Satin Finish</strong>
+                      Elegant striped finish. Single to Super King sizes available.
+                    </p>
+                  </div>
 
+                  <div className="bg-white p-6 rounded-2xl shadow-md border border-stone-100 hover:border-purple-200 transition-colors flex flex-col h-full">
+                    <h3 className="text-xl font-serif font-bold text-stone-800 mb-4 flex items-center gap-3">
+                      <span className="w-6 h-6 rounded-full bg-stone-100 flex items-center justify-center text-[10px] text-stone-400">04</span>
+                      Premium Satin
+                    </h3>
+                    <div className="relative aspect-square w-full rounded-lg overflow-hidden mb-4 group">
+                          <Image src="https://i.postimg.cc/dVt72Bhr/premium-stain.jpg" alt="Satin Stripe Premium" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                      </div>
+                    <p className="text-stone-600 text-sm leading-relaxed border-t pt-4 border-stone-100 mt-auto">
+                      <strong className="block text-stone-900 mb-1 text-xs uppercase tracking-wider">High Quality Stripe</strong>
+                      Perfectly pressed and presented for immediate guest turnover.
+                    </p>
+                  </div>
+
+                  {/* Empty or Placeholder Cards to maintain size if needed, or just let them be 2 cols wide */}
+                  <div className="hidden lg:block lg:col-span-2">
+                       <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl border border-purple-100 h-full p-8 flex flex-col justify-center">
+                            <h4 className="text-purple-900 font-serif text-xl mb-4 italic">"Impeccable quality for the Capital's finest hotels."</h4>
+                            <p className="text-purple-600/70 text-sm">We provide consistent, high-standard laundering for multi-site hotel groups and independent boutiques alike.</p>
+                       </div>
+                  </div>
+
+               </div>
             </div>
+
           </div>
         </div>
 
@@ -274,18 +289,18 @@ export default function Hotel() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                      {/* Product Cards */}
                      {[
-                        { title: "Bath Towels - Elite 600GSM", mobile: "600 GSM", img: "https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Bath sheet, bath towel, hand towel, face cloth. 600 gsm high quality heavy pile." },
-                        { title: "Bath Towels - Premium", mobile: "Turkish Cotton", img: "https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Bath sheet, bath towel, hand towel, face cloth. 500 gsm Turkish Cotton." },
-                        { title: "Leisure Towels", mobile: "Gym & Spa", img: "https://images.pexels.com/photos/6032205/pexels-photo-6032205.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Ideal for Gyms and Spas. Blue/White stripe or plain." },
-                        { title: "Beach Towels", mobile: "Large & Soft", img: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Large beach towels. White or striped." },
-                        { title: "Towels of different colour", mobile: "Varied Palette", img: "https://images.pexels.com/photos/1652395/pexels-photo-1652395.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Towels available in various colours. Dark blue, cream, brown, black etc." },
-                        { title: "Bath Robe", mobile: "Waffle & Velour", img: "https://images.pexels.com/photos/3209095/pexels-photo-3209095.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Bath robe / wellness towel / waffle kimono / velour." }
+                        { title: "Bath Towels - Elite 600GSM", mobile: "600 GSM", img: "https://i.postimg.cc/KzsQbzdY/bathtowel-elite.webp", desc: "Bath sheet, bath towel, hand towel, face cloth. 600 gsm high quality heavy pile." },
+                        { title: "Bath Towels - Premium", mobile: "Turkish Cotton", img: "https://i.postimg.cc/CKGWwjNK/bath-towel.webp", desc: "Bath sheet, bath towel, hand towel, face cloth. 500 gsm Turkish Cotton." },
+                        { title: "Leisure Towels", mobile: "Gym & Spa", img: "https://i.postimg.cc/dQbpZHx3/Leisure-Towels.webp", desc: "Ideal for Gyms and Spas. Blue/White stripe or plain." },
+                        { title: "Beach Towels", mobile: "Large & Soft", img: "https://i.postimg.cc/Wzg97VH3/beach-towel.webp", desc: "Large beach towels. White or striped." },
+                        { title: "Towels of different colour", mobile: "Varied Palette", img: "https://i.postimg.cc/90hPC7J8/multi-color-towel.webp", desc: "Towels available in various colours. Dark blue, cream, brown, black etc." },
+                        { title: "Bath Robe", mobile: "Waffle & Velour", img: "https://i.postimg.cc/GhSBjDGS/bath-robe.webp", desc: "Bath robe / wellness towel / waffle kimono / velour." }
                      ].map((item, idx) => (
-                        <div key={idx} className="group cursor-pointer">
-                            <div className="relative h-80 w-full overflow-hidden rounded-xl mb-4">
+                        <div key={idx} className="group cursor-pointer text-center">
+                            <div className="relative aspect-square w-full overflow-hidden rounded-xl mb-4">
                                 <Image src={item.img} alt={item.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
-                                <div className="absolute bottom-6 left-6 text-white transform translate-y-0 group-hover:-translate-y-2 transition-transform">
+                                <div className="absolute bottom-6 left-6 text-white transform translate-y-0 group-hover:-translate-y-2 transition-transform text-left">
                                     <h3 className="text-xl font-serif">{item.title}</h3>
                                 </div>
                             </div>
