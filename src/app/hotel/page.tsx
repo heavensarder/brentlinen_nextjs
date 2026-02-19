@@ -204,10 +204,6 @@ export default function Hotel() {
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl border border-purple-100 hover:shadow-lg transition-shadow flex flex-col justify-center items-center text-center h-full">
-                           <Image src="https://i.postimg.cc/XYxqHyR2/logo-brentlinen.webp" alt="Brent Linen Hire" fill className="object-contain" />
-                      <p className="text-xs text-purple-600 font-semibold tracking-tighter">Quality you can trust.<br/>Brent Linen Hire London.</p>
-                  </div>
 
                   <div className="bg-stone-900 text-white p-6 rounded-2xl shadow-xl flex flex-col justify-center h-full">
                       <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center mb-4">

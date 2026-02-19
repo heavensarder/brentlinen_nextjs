@@ -158,7 +158,7 @@ export default function Restaurant() {
         <div className="container mx-auto px-4">
              <div className="text-center mb-16">
                 <span className="text-orange-600 uppercase tracking-widest font-bold text-sm">Classic & Colourful</span>
-                <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mt-4 text-purple-700">Table Clothes - Commercial Laundry Services</h2>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mt-4">Table Clothes - Commercial Laundry Services</h2>
                 <div className="w-24 h-1 bg-orange-300 mx-auto mt-6"></div>
              </div>
 
@@ -194,7 +194,7 @@ export default function Restaurant() {
         {/* SECTION 2: Chef Uniform / Service Cloths */}
         <div className="bg-white py-16">
             <div className="container mx-auto px-4">
-                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-12 text-purple-700">
+                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-12 text-stone-900">
                     Call Customer Service on 020 3488 1616 For Chef Uniform
                  </h2>
                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-stone-700">
@@ -230,7 +230,7 @@ export default function Restaurant() {
         {/* SECTION 3: Restaurant Tablecloths & Napkins Hire - Light */}
         <div className="container mx-auto px-4">
              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 text-purple-700">Restaurant Tablecloths & Napkins Hire - Light</h2>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900">Restaurant Tablecloths & Napkins Hire - Light</h2>
                 <div className="h-1 w-24 bg-stone-800 mx-auto mt-6"></div>
              </div>
 
@@ -266,7 +266,7 @@ export default function Restaurant() {
         {/* SECTION 4: Table Clothes & Napkins Hire - Dark */}
         <div className="container mx-auto px-4">
              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 text-purple-700">Table Clothes & Napkins Hire - Dark</h2>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900">Table Clothes & Napkins Hire - Dark</h2>
                 <div className="h-1 w-24 bg-stone-800 mx-auto mt-6"></div>
              </div>
 
@@ -317,7 +317,7 @@ export default function Restaurant() {
         {/* SECTION 5: Other Napkins (Bistro) */}
         <div className="bg-white py-16">
              <div className="container mx-auto px-4">
-                  <h2 className="text-3xl font-bold text-center text-purple-700 mb-12">Other Napkins - Linen Hire and Laundry Services</h2>
+                  <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-stone-900 mb-12">Other Napkins - Linen Hire and Laundry Services</h2>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
                             { title: "Charcoal Napkin", img: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' },
@@ -339,7 +339,7 @@ export default function Restaurant() {
         {/* SECTION 6: Other Products / Uniforms */}
         <div className="container mx-auto px-4 pb-20">
              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-serif font-bold text-purple-700 mt-4">Other Products - Restaurant Laundry Services</h2>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mt-4">Other Products - Restaurant Laundry Services</h2>
                 <div className="h-1 w-24 bg-stone-800 mx-auto mt-6"></div>
              </div>
              
@@ -444,7 +444,7 @@ export default function Restaurant() {
       */}
       <div className="bg-orange-50 py-24" id="enquiry">
          <div className="container mx-auto px-4 text-center">
-             <h2 className="text-3xl font-serif font-bold text-orange-900 mb-6">Need a quote for your restaurant?</h2>
+             <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mb-6">Need a quote for your restaurant?</h2>
              <p className="text-lg text-orange-800 mb-8 max-w-2xl mx-auto">
                  We provide reliable, high-quality linen hire services for restaurants across London. Contact us today.
              </p>
