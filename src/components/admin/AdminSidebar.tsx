@@ -29,7 +29,7 @@ export default function AdminSidebar() {
       <div className="flex items-center justify-center h-20 border-b border-gray-100">
         <Link href="/">
           <Image
-            src="https://i.postimg.cc/9MMvSmy5/logo.webp"
+            src="https://i.postimg.cc/XYxqHyR2/logo-brentlinen.webp"
             alt="Brent Linen"
             width={200}
             height={70}

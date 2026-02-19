@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Brent Linen | Premium Linen Services",
   description: "Professional linen hire and laundry services for hotels, restaurants, and events.",
   icons: {
-    icon: "https://i.postimg.cc/9MMvSmy5/logo.webp",
+    icon: "https://i.postimg.cc/XYxqHyR2/logo-brentlinen.webp",
   },
 };
 

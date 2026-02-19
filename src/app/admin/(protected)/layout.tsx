@@ -36,7 +36,7 @@ export default async function AdminLayout({
                  {/* Mobile Logo for when Sidebar is hidden (TODO: detailed mobile menu) */}
                  <Link href="/">
                     <Image
-                        src="https://i.postimg.cc/9MMvSmy5/logo.webp"
+                        src="https://i.postimg.cc/XYxqHyR2/logo-brentlinen.webp"
                         alt="Brent Linen"
                         width={120}
                         height={40}

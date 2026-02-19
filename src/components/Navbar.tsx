@@ -43,19 +43,19 @@ export default function Navbar() {
 
       <nav
         className={`bg-white shadow-md transition-all duration-300 border-b border-gray-100 ${
-          isScrolled ? "py-1" : "py-2 md:py-3"
+          isScrolled ? "py-1" : "py-1 md:py-2"
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-2">
               <Image
-                src="https://i.postimg.cc/9MMvSmy5/logo.webp"
+                src="https://i.postimg.cc/XYxqHyR2/logo-brentlinen.webp"
                 alt="Brent Linen"
                 width={180}
                 height={60}
                 className={`transition-all duration-300 object-contain ${
-                  isScrolled ? "h-10" : "h-10 md:h-14"
+                  isScrolled ? "h-10" : "h-10 md:h-18"
                 } w-auto`}
                 priority
               />

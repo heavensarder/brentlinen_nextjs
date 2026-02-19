@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="space-y-4">
           <Link href="/" className="inline-block bg-white p-2 rounded-lg shadow-md">
             <Image
-              src="https://i.postimg.cc/9MMvSmy5/logo.webp"
+              src="https://i.postimg.cc/XYxqHyR2/logo-brentlinen.webp"
               alt="Brent Linen Hire"
               width={160}
               height={60}
