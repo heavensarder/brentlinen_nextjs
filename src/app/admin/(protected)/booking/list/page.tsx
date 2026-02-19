@@ -70,6 +70,7 @@ export default function BookingList() {
                         <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Duration</th>
                         <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Customer</th>
                         <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Details</th>
+                        <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Price</th>
                         <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
                         <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider text-right">Actions</th>
                     </tr>
@@ -77,13 +78,13 @@ export default function BookingList() {
                 <tbody className="divide-y divide-gray-200">
                     {loading ? (
                          <tr>
-                            <td colSpan={7} className="px-6 py-12 text-center text-gray-500">
+                            <td colSpan={8} className="px-6 py-12 text-center text-gray-500">
                                 <FaSpinner className="inline-block animate-spin text-2xl text-purple-600 mb-2" />
                             </td>
                         </tr>
                     ) : bookings.length === 0 ? (
                         <tr>
-                            <td colSpan={7} className="px-6 py-12 text-center text-gray-500">
+                            <td colSpan={8} className="px-6 py-12 text-center text-gray-500">
                                 No bookings received yet.
                             </td>
                         </tr>
@@ -132,6 +133,20 @@ export default function BookingList() {
                                         <span className="font-semibold">Qty:</span> {booking.quantity || 1}
                                     </div>
                                     <div className="text-xs text-gray-500 mt-1">{booking.city}, {booking.zip}</div>
+                                </td>
+                                <td className="px-6 py-4">
+                                    {booking.totalPrice ? (
+                                        <div className="flex flex-col gap-1">
+                                            <span className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-green-50 text-green-700">
+                                                £{booking.totalPrice.toFixed(2)}
+                                            </span>
+                                            <span className="text-xs text-gray-500">
+                                                {booking.totalHours?.toFixed(1)} hrs × £{booking.product?.price?.toFixed(2)}/hr
+                                            </span>
+                                        </div>
+                                    ) : (
+                                        <span className="text-xs text-gray-400 italic">N/A</span>
+                                    )}
                                 </td>
                                 <td className="px-6 py-4">
                                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize ${

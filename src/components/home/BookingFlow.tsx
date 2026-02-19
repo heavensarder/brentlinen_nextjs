@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { FaPoundSign } from "react-icons/fa";
 import Image from "next/image";
 import { FaCalendarAlt, FaClock, FaCheck, FaArrowLeft, FaArrowRight, FaMapMarkerAlt, FaUser, FaFilter, FaChevronLeft, FaChevronRight, FaBoxOpen } from "react-icons/fa";
 import { createBooking } from "@/app/actions/booking";
@@ -182,6 +183,16 @@ export default function BookingFlow({ products, categories }: BookingFlowProps) 
     };
   });
 
+  // Calculate total hours and price (including quantity)
+  const { totalHours, totalPrice } = useMemo(() => {
+    if (!date || !time || !endDate || !endTime) return { totalHours: 0, totalPrice: 0 };
+    const start = new Date(date + 'T' + time);
+    const end = new Date(endDate + 'T' + endTime);
+    const diffMs = end.getTime() - start.getTime();
+    const hours = Math.max(0, diffMs / (1000 * 60 * 60));
+    const price = selectedProduct?.price ? hours * selectedProduct.price * quantity : 0;
+    return { totalHours: Math.round(hours * 10) / 10, totalPrice: Math.round(price * 100) / 100 };
+  }, [date, time, endDate, endTime, selectedProduct, quantity]);
 
   const handleProductSelect = (product: Product) => {
     setSelectedProduct(product);
@@ -233,8 +244,10 @@ export default function BookingFlow({ products, categories }: BookingFlowProps) 
         date: date,
         endDate: endDate,
         time: time,
-        endTime: endTime, // Always send endTime
-        quantity: quantity
+        endTime: endTime,
+        quantity: quantity,
+        totalHours: totalHours || undefined,
+        totalPrice: totalPrice || undefined,
     });
 
     if (res.success) {
@@ -393,8 +406,10 @@ export default function BookingFlow({ products, categories }: BookingFlowProps) 
                                             {product.description}
                                         </p>
                                         <div className="mt-auto flex justify-between items-center pt-4 border-t border-gray-100 w-full">
-                                            {product.price ? (
-                                                <span className="font-bold text-gray-900">£{product.price.toFixed(2)}/hr</span>
+                                            {product.price && !product.quantity ? (
+                                                <span className="font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-lg">£{product.price.toFixed(2)}/hr <span className="text-xs font-medium text-purple-500">per piece</span></span>
+                                            ) : product.price && product.quantity ? (
+                                                <span className="font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-lg">£{product.price.toFixed(2)}/hr</span>
                                             ) : (
                                                 <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">Free Consultation</span>
                                             )}
@@ -541,6 +556,36 @@ export default function BookingFlow({ products, categories }: BookingFlowProps) 
                         </div>
                     </div>
 
+                    {/* Price Summary */}
+                    {selectedProduct.price && totalHours > 0 && (
+                        <div className="mt-8 bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-200">
+                            <div className="flex items-center gap-2 mb-3">
+                                <FaPoundSign className="text-purple-600" />
+                                <h4 className="font-bold text-gray-800">Price Estimate</h4>
+                            </div>
+                            <div className={`grid ${quantity > 1 ? 'grid-cols-4' : 'grid-cols-3'} gap-3 text-center`}>
+                                <div className="bg-white p-3 rounded-lg shadow-sm">
+                                    <div className="text-2xl font-bold text-purple-700">{totalHours}</div>
+                                    <div className="text-xs text-gray-500 font-medium">Hours</div>
+                                </div>
+                                <div className="bg-white p-3 rounded-lg shadow-sm">
+                                    <div className="text-2xl font-bold text-gray-700">×</div>
+                                    <div className="text-xs text-gray-500 font-medium">£{selectedProduct.price.toFixed(2)}/hr</div>
+                                </div>
+                                {quantity > 1 && (
+                                    <div className="bg-white p-3 rounded-lg shadow-sm">
+                                        <div className="text-2xl font-bold text-gray-700">× {quantity}</div>
+                                        <div className="text-xs text-gray-500 font-medium">Qty</div>
+                                    </div>
+                                )}
+                                <div className="bg-white p-3 rounded-lg shadow-sm border-2 border-purple-300">
+                                    <div className="text-2xl font-bold text-green-600">£{totalPrice.toFixed(2)}</div>
+                                    <div className="text-xs text-gray-500 font-medium">Total</div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                     <div className="mt-10 flex justify-end">
                         <button
                             onClick={handleDetailsProceed}
@@ -585,11 +630,19 @@ export default function BookingFlow({ products, categories }: BookingFlowProps) 
                             </p>
                              <p className="text-sm text-gray-600 mt-1 flex items-center gap-2">
                                 <FaClock className="text-purple-500" /> 
-                                {time}
+                                {time} — {endTime}
                             </p>
                              <p className="text-sm text-gray-600 mt-1 flex items-center gap-2">
                                 <strong>Quantity:</strong> {quantity}
                             </p>
+                             {selectedProduct.price && totalHours > 0 && (
+                                <div className="mt-2 pt-2 border-t border-purple-200">
+                                    <p className="text-sm font-bold text-green-700 flex items-center gap-2">
+                                        <FaPoundSign className="text-green-600" />
+                                        {totalHours} hrs × £{selectedProduct.price.toFixed(2)}/hr{quantity > 1 ? ` × ${quantity} qty` : ''} = <span className="text-lg">£{totalPrice.toFixed(2)}</span>
+                                    </p>
+                                </div>
+                             )}
                         </div>
                      </div>
                      <form onSubmit={handleSubmit} className="space-y-6">

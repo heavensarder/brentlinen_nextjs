@@ -173,6 +173,8 @@ export async function createBooking(data: {
   endDate?: any; // Date object or string
   endTime?: string;
   quantity?: number;
+  totalHours?: number;
+  totalPrice?: number;
 }) {
   try {
     const product = await prisma.bookingProduct.findUnique({
@@ -193,6 +195,8 @@ export async function createBooking(data: {
         endDate: data.endDate ? new Date(data.endDate) : null,
         endTime: data.endTime || null,
         quantity: data.quantity || 1,
+        totalHours: data.totalHours || null,
+        totalPrice: data.totalPrice || null,
         status: "pending",
       },
       include: { product: true },
@@ -222,6 +226,8 @@ export async function createBooking(data: {
             .replace("{{date}}", new Date(data.date).toLocaleDateString())
             .replace("{{time}}", data.time || "")
              .replace("{{quantity}}", (data.quantity || 1).toString())
+            .replace("{{totalHours}}", data.totalHours ? data.totalHours.toFixed(1) : "N/A")
+            .replace("{{totalPrice}}", data.totalPrice ? `£${data.totalPrice.toFixed(2)}` : "N/A")
             .replace("{{address}}", data.address || "")
             .replace("{{city}}", data.city || "")
             .replace("{{zip}}", data.zip || "");
@@ -244,7 +250,9 @@ export async function createBooking(data: {
             .replace("{{product}}", product?.title || "Product")
             .replace("{{date}}", new Date(data.date).toLocaleDateString())
             .replace("{{time}}", data.time || "")
-            .replace("{{quantity}}", (data.quantity || 1).toString());
+            .replace("{{quantity}}", (data.quantity || 1).toString())
+            .replace("{{totalHours}}", data.totalHours ? data.totalHours.toFixed(1) : "N/A")
+            .replace("{{totalPrice}}", data.totalPrice ? `£${data.totalPrice.toFixed(2)}` : "N/A");
 
           await sendEmail({
             to: data.email,

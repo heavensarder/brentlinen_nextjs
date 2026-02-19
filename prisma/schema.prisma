@@ -118,6 +118,8 @@ model Booking {
   endDate       DateTime?      // Optional end date for range
   endTime       String?        // Optional end time
   quantity      Int            @default(1)
+  totalHours    Float?
+  totalPrice    Float?
   status        String         @default("pending")
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
