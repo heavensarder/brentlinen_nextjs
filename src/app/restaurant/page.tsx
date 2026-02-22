@@ -51,7 +51,7 @@ export default function Restaurant() {
         {/* Parallax Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1920" // Elegant Restaurant Setting
+            src="https://i.postimg.cc/DfNzPvQn/restaurant-hero.webp" // Elegant Restaurant Setting
             alt="Restaurant Linen Hire"
             fill
             className="object-cover scale-105 animate-slow-zoom"
@@ -128,7 +128,7 @@ export default function Restaurant() {
             <div className="relative h-[500px] w-full hidden md:block">
                  <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-2xl overflow-hidden shadow-2xl z-10">
                      <Image
-                        src="https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        src="https://i.postimg.cc/qBF86dz1/restaurant-view.webp"
                         alt="Fine Dining"
                         fill
                         className="object-cover"
@@ -136,7 +136,7 @@ export default function Restaurant() {
                  </div>
                  <div className="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-2xl overflow-hidden shadow-2xl z-20 border-8 border-white">
                       <Image
-                        src="https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800" // Chef Plating
+                        src="https://i.postimg.cc/TPhdDByB/rstartrent-sec1.webp" // Chef Plating
                         alt="Chef Service"
                         fill
                         className="object-cover"
@@ -166,17 +166,17 @@ export default function Restaurant() {
                 {[
                     { 
                         title: "Burgundy", 
-                        img: "https://images.pexels.com/photos/5908234/pexels-photo-5908234.jpeg?auto=compress&cs=tinysrgb&w=800", // Placeholder for Burgundy (Red Check is close enough for placeholder)
+                        img: "https://i.postimg.cc/5NqL7QPb/Burgundy.webp", // Placeholder for Burgundy (Red Check is close enough for placeholder)
                         desc: "All sizes - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available. High Quality." 
                     },
                     { 
                         title: "White", 
-                        img: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800", 
+                        img: "https://i.postimg.cc/QtmZYbWT/white.jpg", 
                         desc: "All sizes - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available. High Quality." 
                     },
                     { 
                         title: "Wedding", 
-                        img: "https://images.pexels.com/photos/6205523/pexels-photo-6205523.jpeg?auto=compress&cs=tinysrgb&w=800", 
+                        img: "https://i.postimg.cc/bvd6f9Mt/wedding-table.webp", 
                         desc: "All sizes - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available. High Quality." 
                     },
                 ].map((item, idx) => (
@@ -201,17 +201,17 @@ export default function Restaurant() {
                       {[
                         { 
                             title: "White Napkin", 
-                            img: "https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800",
+                            img: "https://i.postimg.cc/wxDwzvWy/White-Napkin.webp",
                             desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available'
                         },
                         { 
                             title: "Elite Napkin", 
-                            img: "https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800",
+                            img: "https://i.postimg.cc/R03TDV6d/Elite-Napkin-(1).webp",
                             desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available'
                         },
                         { 
                             title: "Restaurant Ambience", 
-                            img: "https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&w=800",
+                            img: "https://i.postimg.cc/7ZR308s2/luxurious-restaurant.webp",
                             desc: "A luxurious restaurant designed with Elite Table Clothes and Napkins"
                         }
                       ].map((item, idx) => (
@@ -238,17 +238,17 @@ export default function Restaurant() {
                  {[
                     { 
                         title: "Cream Napkin", 
-                        img: "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800", // Placeholder (Light)
+                        img: "https://i.postimg.cc/Xqnd4VJs/Cream-Napkin.webp", // Placeholder (Light)
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available'
                     },
                     { 
                         title: "Ivory Napkin", 
-                        img: "https://images.pexels.com/photos/3214157/pexels-photo-3214157.jpeg?auto=compress&cs=tinysrgb&w=800", // Placeholder (Light)
+                        img: "https://i.postimg.cc/hGxdmJQY/Ivory-Napkin.webp", // Placeholder (Light)
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available'
                     },
                     { 
                         title: "Gold Napkin", 
-                        img: "https://images.pexels.com/photos/15815615/pexels-photo-15815615.jpeg?auto=compress&cs=tinysrgb&w=800", // Placeholder (Yellowish)
+                        img: "https://i.postimg.cc/5yPYJLDt/Gold-Napkin.webp", // Placeholder (Yellowish)
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester - 100% Polyester available'
                     }
                  ].map((item, idx) => (
@@ -274,32 +274,32 @@ export default function Restaurant() {
                  {[
                     { 
                         title: "Red Napkin", 
-                        img: "https://images.pexels.com/photos/5908234/pexels-photo-5908234.jpeg?auto=compress&cs=tinysrgb&w=800", // Reddish
+                        img: "https://i.postimg.cc/mg1zxcwJ/Red-Napkin.webp", // Reddish
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester -100% Polyester available'
                     },
                     { 
                         title: "Burgundy Napkin", 
-                        img: "https://images.pexels.com/photos/5908234/pexels-photo-5908234.jpeg?auto=compress&cs=tinysrgb&w=800", // Reddish
+                        img: "https://i.postimg.cc/YqZ0xrHb/cr-w-388-h-194.webp", // Reddish
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester -100% Polyester available'
                     },
                     { 
                         title: "Purple Napkin", 
-                        img: "https://images.pexels.com/photos/6660606/pexels-photo-6660606.jpeg?auto=compress&cs=tinysrgb&w=800", // Purple shade
+                        img: "https://i.postimg.cc/zBzGf3CR/Purple-Napkin.webp", // Purple shade
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester -100% Polyester available'
                     },
                     { 
                         title: "Green Napkin", 
-                        img: "https://images.pexels.com/photos/176918/pexels-photo-176918.jpeg?auto=compress&cs=tinysrgb&w=800", // Greenish
+                        img: "https://i.postimg.cc/VvTf4R3C/Green-Napkin.webp", // Greenish
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester -100% Polyester available'
                     },
                     { 
                         title: "Moss Green Napkin", 
-                        img: "https://images.pexels.com/photos/176918/pexels-photo-176918.jpeg?auto=compress&cs=tinysrgb&w=800", // Greenish
+                        img: "https://i.postimg.cc/D0bkfKMr/Moss-Green-Napkin.webp", // Greenish
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester -100% Polyester available'
                     },
                     { 
                         title: "Black Napkin", 
-                        img: "https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800", // Dark
+                        img: "https://i.postimg.cc/mZ0hYZRV/Black-Napkin.webp", // Dark
                         desc: 'Sizes: 20"x20" or 22"x22 - 100% Cotton - 50% Cotton & 50% Polyester -100% Polyester available'
                     },
                  ].map((item, idx) => (
@@ -320,9 +320,9 @@ export default function Restaurant() {
                   <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-stone-900 mb-12">Other Napkins - Linen Hire and Laundry Services</h2>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
-                            { title: "Charcoal Napkin", img: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' },
-                             { title: "Red Napkin", img: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' },
-                              { title: "Grey Napkin", img: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' }
+                            { title: "Charcoal Napkin", img: "https://i.postimg.cc/GmbLKHf6/Charcoal-Napkin.webp", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' },
+                             { title: "Red Napkin", img: "https://i.postimg.cc/yxqBZd93/Red-c-Napkin.webp", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' },
+                              { title: "Grey Napkin", img: "https://i.postimg.cc/zDWq1CZ4/Grey-Napkin.webp", desc: 'Sizes: 20"X20" or 22"X22 - 100% Cotton available' }
                         ].map((item, idx) => (
                              <div key={idx} className="bg-stone-50 p-6 rounded-xl text-center hover:shadow-lg transition-shadow group">
                                 <div className="relative h-64 w-full mb-6 rounded-lg overflow-hidden shadow-md">
@@ -348,19 +348,19 @@ export default function Restaurant() {
                   {[
                       { 
                           name: "Waiter's Apron - Black - Short", 
-                          img: "https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=800", // Black Apron
+                          img: "https://i.postimg.cc/13zx462X/Waiter-s-Apron-Black.webp", // Black Apron
                           desc: "100% Cotton or 100% Polyester and colours available",
                           ratio: "aspect-[3/4]"
                       },
                       { 
                           name: "Waiter's Apron - White - Short", 
-                          img: "https://images.pexels.com/photos/6646115/pexels-photo-6646115.jpeg?auto=compress&cs=tinysrgb&w=800", // White Apron
+                          img: "https://i.postimg.cc/Y9KyNmn9/Waiter-s-Apron-whiet.jpg", // White Apron
                           desc: "100% Cotton or 100% Polyester and colours available",
                           ratio: "aspect-[3/4]"
                       },
                       { 
                           name: "Waiter's Apron - Black - Short", 
-                          img: "https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=800", // Black Apron (Duplicate in ref image?)
+                          img: "https://i.postimg.cc/Vs7WmCq0/apron-polester.jpg", // Black Apron (Duplicate in ref image?)
                           desc: "100% Cotton or 100% Polyester and colours available",
                           ratio: "aspect-[3/4]"
                       },
@@ -378,19 +378,19 @@ export default function Restaurant() {
                   {[
                        { 
                           name: "Waiter's T-Shirt Polo Shirt - Black", 
-                          img: "https://images.pexels.com/photos/2294342/pexels-photo-2294342.jpeg?auto=compress&cs=tinysrgb&w=800", // Black T-Shirt
+                          img: "https://i.postimg.cc/qB8gGVRp/waiter-tshirt.jpg", // Black T-Shirt
                           desc: "Short Sleeve 100% Cotton or Polycotton and colours available",
                           ratio: "aspect-[3/4]"
                       },
                        { 
                           name: "Waiter's T-Shirt Polo Shirt - White", 
-                          img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=800", // White T-Shirt
+                          img: "https://i.postimg.cc/25cnrpvf/waiter-tshirt-white.jpg", // White T-Shirt
                           desc: "Short Sleeve 100% Cotton or Polycotton and colours available",
                           ratio: "aspect-[3/4]"
                       },
                        { 
                           name: "Waiter's T-Shirt Polo Shirt - Blue", 
-                          img: "https://images.pexels.com/photos/11911475/pexels-photo-11911475.jpeg?auto=compress&cs=tinysrgb&w=800", // Blue T-Shirt
+                          img: "https://i.postimg.cc/wB7751tV/waiter-tshirt-blue.jpg", // Blue T-Shirt
                           desc: "Short Sleeve 100% Cotton or Polycotton and colours available",
                           ratio: "aspect-[3/4]"
                       },
@@ -408,19 +408,19 @@ export default function Restaurant() {
                    {[
                       { 
                           name: "Glass Cloth / Bar Cloth / Plate Cloth", 
-                          img: "https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800", // Cloths
+                          img: "https://i.postimg.cc/BntqkdqJ/glass-napkin.jpg", // Cloths
                           desc: "White - 100% Cotton available laundry service dry cleaners nearby chef uniform in London",
                           ratio: "aspect-[4/3]"
                       },
                       { 
                           name: "Glass Cloth / Bar Cloth / Plate Cloth", 
-                          img: "https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800", // Cloths (Duplicate in ref?)
+                          img: "https://i.postimg.cc/sxwr0Jqt/glass-napkin2.jpg", // Cloths (Duplicate in ref?)
                           desc: "White - 100% Cotton available",
                           ratio: "aspect-[4/3]"
                       },
                       { 
                           name: "Coloured Napkins", 
-                          img: "https://images.pexels.com/photos/5908234/pexels-photo-5908234.jpeg?auto=compress&cs=tinysrgb&w=800", // Coloured Napkins
+                          img: "https://i.postimg.cc/43BQy7Dq/colored-napkin.jpg", // Coloured Napkins
                           desc: "The satin band - 100% Cotton or 100% Polyester available",
                           ratio: "aspect-[4/3]"
                       },
